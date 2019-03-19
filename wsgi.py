@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 
 import sys
 from os.path import abspath
@@ -11,9 +11,9 @@ application = app.app
 
 """
 建立一个软连接
-ln -s /root/BBS_Flask/bbs.conf /etc/supervisor/conf.d/bbs.conf
+ln -s /root/Last_Chance/BBS_Flask/bbs.conf /etc/supervisor/conf.d/bbs.conf
 
-ln -s /root/BBS_Flask/bbs.nginx /etc/nginx/sites-enabled/bbs
+ln -s /root/Last_Chance/BBS_Flask/bbs.nginx /etc/nginx/sites-enabled/bbs
 
 
 
@@ -21,7 +21,7 @@ ln -s /root/BBS_Flask/bbs.nginx /etc/nginx/sites-enabled/bbs
 
 [program:bbs]
 command=/usr/local/bin/gunicorn wsgi -c gunicorn.config.py
-directory=/root/BBS_Flask
+directory=/var/www/bbs
 autostart=true
 autorestart=true
 
