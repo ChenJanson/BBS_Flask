@@ -29,3 +29,8 @@ class Topic(Model):
         from .board import Board
         m = Board.find(self.board_id)
         return m
+
+    def user(self):
+        from .user import User
+        u = User.find(self.user_id)
+        return u

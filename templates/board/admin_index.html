@@ -10,5 +10,13 @@
         <br>
         <button>add</button>
     </form>
+    <div>
+        {% for b in boards %}
+        <span>{{b.title}}</span>
+        <a href="/board/delete?board_id={{b.id}}">DELETE</a>
+        <br>
+
+        {% endfor %}
+    </div>
 </body>
 </html>
