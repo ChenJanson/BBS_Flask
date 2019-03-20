@@ -36,6 +36,6 @@ if __name__ == '__main__':
     config = dict(
         debug=True,
         host='0.0.0.0',
-        port=2001,
+        port=2002,
     )
     app.run(**config)
